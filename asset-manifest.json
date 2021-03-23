@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/casino_app/static/js/main.6ba7d81d.chunk.js",
+    "main.js.map": "/casino_app/static/js/main.6ba7d81d.chunk.js.map",
+    "runtime-main.js": "/casino_app/static/js/runtime-main.2a1b05a6.js",
+    "runtime-main.js.map": "/casino_app/static/js/runtime-main.2a1b05a6.js.map",
+    "static/js/2.d384b714.chunk.js": "/casino_app/static/js/2.d384b714.chunk.js",
+    "static/js/2.d384b714.chunk.js.map": "/casino_app/static/js/2.d384b714.chunk.js.map",
+    "static/js/3.814c91fa.chunk.js": "/casino_app/static/js/3.814c91fa.chunk.js",
+    "static/js/3.814c91fa.chunk.js.map": "/casino_app/static/js/3.814c91fa.chunk.js.map",
+    "index.html": "/casino_app/index.html",
+    "static/js/2.d384b714.chunk.js.LICENSE.txt": "/casino_app/static/js/2.d384b714.chunk.js.LICENSE.txt",
+    "static/media/banner.b29d74a2.jpg": "/casino_app/static/media/banner.b29d74a2.jpg",
+    "static/media/casino_logo.334c3389.png": "/casino_app/static/media/casino_logo.334c3389.png",
+    "static/media/logo_casino.6c392cf2.jpg": "/casino_app/static/media/logo_casino.6c392cf2.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a1b05a6.js",
+    "static/js/2.d384b714.chunk.js",
+    "static/js/main.6ba7d81d.chunk.js"
+  ]
+}
