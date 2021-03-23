@@ -25,6 +25,7 @@ export const HomeSection = styled.div`
     no-repeat;
   background-size: cover;
   min-height: 100vh;
+  padding-bottom: 10vh;
 `;
 export const Logo = styled.div`
   height: 100px;
@@ -280,7 +281,50 @@ export const UserRating = styled.div`
   ${full}
   ${centerGrid}
   ${sideLine}
+  align-content: center;
+  p {
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+  }
+
+  @media only screen and ${breakpoint.device.sm} {
+    p {
+      display: none;
+    }
+    align-content: end;
+  }
 `;
+
+export const Stars = styled.div`
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+`;
+
+export const Star = styled.div`
+  width: 20px;
+  height: 20px;
+  i {
+    color: transparent;
+    position: absolute;
+    background-clip: text;
+
+    &.full {
+      color: ${(props) => props.theme.colors.gold};
+    }
+    &.half {
+      color: ${(props) => props.theme.colors.gray100};
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+    &.empty {
+      color: ${(props) => props.theme.colors.gray100};
+    }
+  }
+`;
+
 export const Rating = styled.div`
   ${full}
   p {

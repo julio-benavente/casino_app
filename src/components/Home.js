@@ -23,6 +23,8 @@ import {
   Play,
   Extra,
   CasinoName,
+  Stars,
+  Star,
 } from "../styles/homeStyles";
 
 const casinos = [
@@ -35,7 +37,7 @@ const casinos = [
       plus: ["150 Zee Spins", "500 Zee Points"],
     },
     userRating: 2500,
-    rating: 10.0,
+    rating: 1.5,
     extra: "Player Favourite",
   },
   {
@@ -47,7 +49,7 @@ const casinos = [
       plus: ["150 Zee Spins", "500 Zee Points"],
     },
     userRating: 2500,
-    rating: 10.0,
+    rating: 3.5,
     extra: "Player Favourite",
   },
   {
@@ -59,7 +61,7 @@ const casinos = [
       plus: ["150 Zee Spins", "500 Zee Points"],
     },
     userRating: 2500,
-    rating: 10.0,
+    rating: 6.0,
     extra: "Player Favourite",
   },
   {
@@ -71,7 +73,7 @@ const casinos = [
       plus: ["150 Zee Spins", "500 Zee Points"],
     },
     userRating: 2500,
-    rating: 10.0,
+    rating: 7.0,
     extra: "Player Favourite",
   },
 ];
@@ -140,6 +142,51 @@ const Home = () => {
                 </WelcomeBonus>
                 <UserRating>
                   <p>Rating ({userRating})</p>
+                  <Stars>
+                    {/* <i
+                      className={`fas ${rating >= 2 ? "fa-star" : "fa-star-half"}`}
+                    ></i> */}
+                    <Star>
+                      <i className="fas full fa-star"></i>
+                      <i
+                        className={`fas fa-star
+                        ${rating == 0 ? "empty" : rating < 2 ? "half" : "full"}
+                      `}
+                      ></i>
+                    </Star>
+                    <Star>
+                      <i className="fas full fa-star"></i>
+                      <i
+                        className={`fas fa-star
+                        ${rating < 2 ? "empty" : rating < 4 ? "half" : "full"}
+                      `}
+                      ></i>
+                    </Star>
+                    <Star>
+                      <i className="fas full fa-star"></i>
+                      <i
+                        className={`fas fa-star
+                        ${rating < 4 ? "empty" : rating < 6 ? "half" : "full"}
+                      `}
+                      ></i>
+                    </Star>
+                    <Star>
+                      <i className="fas full fa-star"></i>
+                      <i
+                        className={`fas fa-star
+                        ${rating < 6 ? "empty" : rating < 8 ? "half" : "full"}
+                      `}
+                      ></i>
+                    </Star>
+                    <Star>
+                      <i className="fas full fa-star"></i>
+                      <i
+                        className={`fas fa-star
+                        ${rating < 8 ? "empty" : rating < 10 ? "half" : "full"}
+                      `}
+                      ></i>
+                    </Star>
+                  </Stars>
                 </UserRating>
                 <Rating>
                   <p>{rating.toFixed(1)}</p>
